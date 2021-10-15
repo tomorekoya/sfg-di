@@ -1,10 +1,8 @@
 package com.triddle.sfgdi.controllers;
 
-import com.triddle.sfgdi.services.GreetingServiceImpl;
+import com.triddle.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PropertyInjectedControllerTest {
 
@@ -13,7 +11,7 @@ class PropertyInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new PropertyInjectedController();
-        controller.greetingService = new GreetingServiceImpl();   // Dependency injection occurs here.
+        controller.greetingService = new ConstructorGreetingService();   // Dependency injection occurs here.
     }
 
     @Test
