@@ -1,7 +1,9 @@
 package com.triddle.sfgdi.controllers;
 
 import com.triddle.sfgdi.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
 
     private final GreetingService greetingService;
